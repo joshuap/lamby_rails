@@ -26,3 +26,6 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "lamby", "~> 2.0", require: false
+gem "aws-sdk-ssm", "~> 1.73"
