@@ -31,6 +31,17 @@ Resources:
           Properties:
             ApiId: !Ref RailsApi
       AutoPublishAlias: live
+      Policies:
+        - Version: "2012-10-17"
+          Statement:
+            - Effect: Allow
+              Action:
+                - ssm:GetParameter
+                - ssm:GetParameters
+                - ssm:GetParametersByPath
+                - ssm:GetParameterHistory
+              Resource:
+                - !Sub arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/config/lamby_rails/*
 
   RailsApi:
     Type: AWS::Serverless::HttpApi
