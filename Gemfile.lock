@@ -77,6 +77,7 @@ GEM
     ffi (1.12.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    honeybadger (4.6.0)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)
@@ -174,6 +175,7 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk-ssm (~> 1.73)
   byebug
+  honeybadger (~> 4.6)
   jbuilder (~> 2.7)
   lamby (~> 2.0)
   rails (~> 6.0.2, >= 6.0.2.2)

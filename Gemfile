@@ -29,3 +29,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "lamby", "~> 2.0", require: false
 gem "aws-sdk-ssm", "~> 1.73"
+
+gem "honeybadger", "~> 4.6"
